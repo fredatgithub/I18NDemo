@@ -14,14 +14,11 @@ namespace I18NDemo
       LocalizationManager.Instance.SetLanguage("fr");
     }
 
-    private void CmbLanguage_SelectionChanged(
-        object sender,
-        SelectionChangedEventArgs e)
+    private void CmbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
       if (CmbLanguage.SelectedItem is ComboBoxItem item)
       {
         string language = item.Tag.ToString()!;
-
         LocalizationManager.Instance.SetLanguage(language);
       }
     }

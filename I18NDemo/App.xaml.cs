@@ -8,5 +8,4 @@ namespace I18NDemo
   public partial class App: Application
   {
   }
-
 }
